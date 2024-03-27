@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Playlist</title>
+<link rel="stylesheet" th:href="@{/css/createplaylist.css}">
+</head>
+<body>
+ <div class="navbar">
+        <a href="home">Home</a>
+        <a href="about">About</a>
+        <a href="contact">Contact</a>
+    </div>
+
+<form action="/addplaylist" method="post">
+<label>Playlist Name:</label>
+<input type="text" name="name">
+<br/>
+<!-- Assuming dynamic content rendering with Thymeleaf -->
+<div th:each="song : ${songslist}">
+    <input type="checkbox" th:name="songs" th:value="${song.id}">
+    <label th:text="${song.name}"></label>
+</div>
+<input type="submit" value="ADD PLAYLIST">
+</form>
+ <div class="footer">
+        <p>&copy; 2024 tunehub. All rights reserved.</p>
+    </div>
+</body>
+</html>

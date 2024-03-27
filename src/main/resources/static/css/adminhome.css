@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+    text-align: center;
+    background-image: url("/images/adminhome.png"); /* Specify the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+h1 {
+    color: #333;
+    margin-top: 50px;
+}
+
+a, button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+a:hover, button:hover {
+    opacity: 0.9;
+}
+
+.add-song {
+    background-color: #2196F3; /* Blue */
+}
+
+.view-song {
+    background-color: #4CAF50; /* Green */
+}
+
+.create-playlist {
+    background-color: #FF9800; /* Orange */
+}
+
+.view-playlist {
+    background-color: #FF5722; /* Red */
+}
+
+.logout {
+    background-color: #333; /* Dark gray */
+}
+
+p {
+    margin-top: 50px;
+    color: #666;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

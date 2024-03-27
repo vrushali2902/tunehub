@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="stylesheet" th:href="@{/css/adminhome.css}">
+</head>
+<body>
+ <div class="navbar">
+        <a href="home">Home</a>
+        <a href="about">About</a>
+        <a href="contact">Contact</a>
+    </div>
+    <h1>Welcome, Admin!</h1>
+
+    <a class="add-song" href="/map-addsongs">Add Song</a>
+    <a class="view-song" href="/map-viewsongs">View Songs</a>
+    <a class="create-playlist" href="/createplaylist">Create Playlist</a>
+    <a class="view-playlist" href="/viewPlaylists">View Playlists</a>
+
+	</br>
+    <button class="logout" onclick="logout()">Logout</button>
+
+    <p>Manage your songs and playlists with ease!</p>
+
+    <script>
+        function logout() {
+            // Add your logout functionality here
+            alert("You have been logged out.");
+        }
+    </script>
+    
+     <div class="footer">
+        <p>&copy; 2024 tunehub. All rights reserved.</p>
+    </div>
+</body>
+</html>
